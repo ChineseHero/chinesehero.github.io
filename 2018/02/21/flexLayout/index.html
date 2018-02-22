@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css布局, 网页布局, flex弹性布局," />
 
 
 
@@ -79,16 +79,32 @@
 
 
 
-<meta name="description" content="太伯爵写东西的地方。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="太伯爵">
-<meta property="og:url" content="https://chinesehero.github.io/index.html">
+<meta name="description" content="前言网页布局是css中的重点。传统的网页布局方法是盒子模型，比如display属性, position属性和float属性。它对于其他特殊的布局非常不方便，比如垂直居中(虽然有vertical-align:middle但很多时候属性无效) 。 w3c提出一种新的方案–flex布局，可以简洁，便利，完整，响应式地实现各种页面布局。目前，它已经得到所有浏览器的支持(IE10以上，哭笑。完全解决兼容性还">
+<meta name="keywords" content="css布局, 网页布局, flex弹性布局">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flex弹性布局">
+<meta property="og:url" content="https://chinesehero.github.io/2018/02/21/flexLayout/index.html">
 <meta property="og:site_name" content="太伯爵">
-<meta property="og:description" content="太伯爵写东西的地方。">
+<meta property="og:description" content="前言网页布局是css中的重点。传统的网页布局方法是盒子模型，比如display属性, position属性和float属性。它对于其他特殊的布局非常不方便，比如垂直居中(虽然有vertical-align:middle但很多时候属性无效) 。 w3c提出一种新的方案–flex布局，可以简洁，便利，完整，响应式地实现各种页面布局。目前，它已经得到所有浏览器的支持(IE10以上，哭笑。完全解决兼容性还">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/2.jpg">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/3.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/4.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/5.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/6.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/7.jpg">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/8.jpg">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/9.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/10.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/11.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/12.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/13.png">
+<meta property="og:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/14.jpg">
+<meta property="og:updated_time" content="2018-02-21T15:58:25.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="太伯爵">
-<meta name="twitter:description" content="太伯爵写东西的地方。">
+<meta name="twitter:title" content="flex弹性布局">
+<meta name="twitter:description" content="前言网页布局是css中的重点。传统的网页布局方法是盒子模型，比如display属性, position属性和float属性。它对于其他特殊的布局非常不方便，比如垂直居中(虽然有vertical-align:middle但很多时候属性无效) 。 w3c提出一种新的方案–flex布局，可以简洁，便利，完整，响应式地实现各种页面布局。目前，它已经得到所有浏览器的支持(IE10以上，哭笑。完全解决兼容性还">
+<meta name="twitter:image" content="https://chinesehero.github.io/2018/02/21/flexLayout/2.jpg">
 
 
 
@@ -118,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://chinesehero.github.io/"/>
+  <link rel="canonical" href="https://chinesehero.github.io/2018/02/21/flexLayout/"/>
 
 
 
 
 
-  <title>太伯爵</title>
+  <title>flex弹性布局 | 太伯爵</title>
   
 
 
@@ -143,8 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +232,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/21/flexLayout/" itemprop="url">flex弹性布局</a></h1>
+          <h1 class="post-title" itemprop="name headline">flex弹性布局</h1>
         
 
         <div class="post-meta">
@@ -301,9 +314,7 @@
       
 
       
-        
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网页布局是css中的重点。<br><br>传统的网页布局方法是盒子模型，比如display属性, position属性和float属性。它对于其他特殊的布局非常不方便，比如垂直居中(虽然有vertical-align:middle但很多时候属性无效) 。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>网页布局是css中的重点。<br><br>传统的网页布局方法是盒子模型，比如display属性, position属性和float属性。它对于其他特殊的布局非常不方便，比如垂直居中(虽然有vertical-align:middle但很多时候属性无效) 。</p>
 <p>w3c提出一种新的方案–flex布局，可以简洁，便利，完整，响应式地实现各种页面布局。目前，它已经得到所有浏览器的支持(IE10以上，哭笑。完全解决兼容性还是要麻烦一番了。)。更好的解决了一些布局的痛点。<br><img src="/2018/02/21/flexLayout/2.jpg" title="支持现状"><br>现在的前端大部分开发，尤其是移动端开发都在用flex布局，比如淘宝首页，饿了么等等.可想flex布局现在普及的现状。</p>
 <h2 id="1-什么是flex布局？"><a href="#1-什么是flex布局？" class="headerlink" title="1.什么是flex布局？"></a>1.什么是flex布局？</h2><hr>
 <p>flex是 flexible box的缩写“弹性布局”，用来为盒状模型提供最大的灵活性。<br>任何一个容器都可以指定Flex布局<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.box&#123;</span><br><span class="line">	display: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -360,8 +371,6 @@
 <p>该属性可能取6个值，除了auto，其他都与align-items属性完全一致。</p>
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2><p>微信的内置浏览器是不是不支持这个属性，微信用display: box。<br>flex在各大厂商都有运用，确实解决了布局的痛点，就是兼容性。但现在浏览器的更新速度，详细已经很好的会解决的。<br>在此勉励自己。</p>
 
-          
-        
       
     </div>
     
@@ -376,280 +385,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chinesehero.github.io/2018/01/29/image-problem/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sun Count">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="太伯爵">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/29/image-problem/" itemprop="url">hexo博客-图片资源问题。</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-29T15:19:09+08:00">
-                2018-01-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/css布局-网页布局-flex弹性布局/" rel="tag"># css布局, 网页布局, flex弹性布局</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>之前我配置图片时，因为hexo是nodejs开发的，图片资源是public文件夹下的images文件中。但是那回上传到github仓库，图片自动消失。仔细查看<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">官网</a>。在下面说明一下。</p>
-<h3 id="资源文件夹"><a href="#资源文件夹" class="headerlink" title="资源文件夹"></a>资源文件夹</h3><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，<br>例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，<br>那最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ![](/images/image.jpg) 的方法访问它们。</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="下载插件"><a href="#下载插件" class="headerlink" title="下载插件"></a>下载插件</h2><p>在hexo的目录下执行npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a> –save（需要等待一段时间）。</p>
-<h2 id="资源文件夹-1"><a href="#资源文件夹-1" class="headerlink" title="资源文件夹"></a>资源文件夹</h2><p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的post_asset_folder 选项设为 true 来打开。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure></p>
-<p>当资源文件管理功能打开后，Hexo将会在你每一次通过 hexo new article  命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个 markdown 文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。<br><img src="/2018/01/29/image-problem/im.png" title="会显示创建相同文章名称的文件夹"></p>
-<h2 id="相对路径引用的标签插件"><a href="#相对路径引用的标签插件" class="headerlink" title="相对路径引用的标签插件"></a>相对路径引用的标签插件</h2><p>通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在存档页或者主页上显示不正确。在hexo2，用hexo.asset.image插件来帮助解决现在Hexo 3可以更简单地在文章中引用你的资源。比如：当你到开文章资源文件夹后，把im.png放入刚才与文章名称相同的文件夹中，如果使用相对路径markdown 语法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](/mi.jpg) </span><br></pre></td></tr></table></figure><br>图片将不会如愿显示在首页上(如果用的新版hexo已经不太支持)。正确的引用图片方式是使用下列的标签插件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img im.png 这里写图片说明 %&#125;</span><br></pre></td></tr></table></figure>
-<p>通过这种方式，图片将会同时出现在文章和主页以及归档页中。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chinesehero.github.io/2018/01/27/frist/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sun Count">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="太伯爵">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/27/frist/" itemprop="url">如何用hexo创建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-27T17:45:34+08:00">
-                2018-01-27
-              </time>
+              <a href="/2018/01/29/image-problem/" rel="next" title="hexo博客-图片资源问题。">
+                <i class="fa fa-chevron-left"></i> hexo博客-图片资源问题。
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="第一步下载git，安装"><a href="#第一步下载git，安装" class="headerlink" title="第一步下载git，安装"></a>第一步下载git，安装</h3><p>这一步大家可以去git官网上下载即可(<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a>)，只不过<br>有可能下载比较慢而已(墙的原因)。</p>
-<h5 id="下载后安装下面图片步骤来安装："><a href="#下载后安装下面图片步骤来安装：" class="headerlink" title="下载后安装下面图片步骤来安装："></a>下载后安装下面图片步骤来安装：</h5><img src="/2018/01/27/frist/git0.png" title="步骤1">
-<h5 id="然后："><a href="#然后：" class="headerlink" title="然后："></a>然后：</h5><img src="/2018/01/27/frist/git1.png" title="步骤2">
-<p>之后安装默认一路点击next，直到finish即可。<br>安装完成后点击鼠标右键出现Git Bash Here和Git GUI Here表示成功。</p>
-<h3 id="第二步安装node-js和npm"><a href="#第二步安装node-js和npm" class="headerlink" title="第二步安装node.js和npm"></a>第二步安装node.js和npm</h3><p>百度搜索nodejs，点击中文官网下载nodejs，也可以点击这里[nodejs下载地址]<br>(<a href="http://nodejs.cn/download/)如果是windows系统，选择.msi比较好，因为它" target="_blank" rel="noopener">http://nodejs.cn/download/)如果是windows系统，选择.msi比较好，因为它</a><br>会直接安装好nodejs环境。nodejs安装完成后，nodejs会自带npm。</p>
-<h5 id="随便文件位置点击鼠标右键Git-Bash-Here，然后输入命令"><a href="#随便文件位置点击鼠标右键Git-Bash-Here，然后输入命令" class="headerlink" title="随便文件位置点击鼠标右键Git Bash Here，然后输入命令"></a>随便文件位置点击鼠标右键Git Bash Here，然后输入命令</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
-<p>查看nodejs版本<br><img src="/2018/01/27/frist/node0.png" title="版本"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br></pre></td></tr></table></figure>
-<p>查看npm版本，出现版本号表示安装成功。</p>
-<p>###安装和初始化Hexo<br>Hexo是基于nodejs开发的个人博客系统(开发者为台湾人)，hexo博客系统的<br>安装需要npm命令来支持，这些工具我们以及在上面全部安装完成，接下来<br>开始吧。</p>
-<p>###安装Hexo<br>你可以自己新建一个hexo文件夹，用于存放你的hexo博客系统。</p>
-<h2 id="在电脑任意空白处点击右键，选择Git-Bash-Here打开命令行"><a href="#在电脑任意空白处点击右键，选择Git-Bash-Here打开命令行" class="headerlink" title="在电脑任意空白处点击右键，选择Git Bash Here打开命令行"></a>在电脑任意空白处点击右键，选择Git Bash Here打开命令行</h2><p>因为国内墙的原因，我们下载淘宝团队的npm镜像<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></p>
-<p>等待一会儿，下载完成。这样我们在执行npm命令时，可以报npm改成cnpm<br>然后使用下面命令从npm安装Hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
-<p>我们也可以改成使用淘宝镜像cnpm<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
-<p>安装完成后输入代码，如下图显示状态信息表示安装成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure></p>
-<img src="/2018/01/27/frist/hexo0.png" title="显示版本好。">
-<p>###初始化<br>安装完成后找到你创建的文件夹，然后在该目录下打开命令行点击鼠标邮件<br>选择Git Bash Here打开命令行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>初始化博客空间，下载依赖的包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
-<p>成功之后你的文件夹会出现如下图的目录,表示初始化成功。<br><img src="/2018/01/27/frist/hexo.png" title="成功后的目录"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -659,258 +424,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chinesehero.github.io/2018/01/22/hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sun Count">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="太伯爵">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/22/hello/" itemprop="url">第一个博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-22T14:17:34+08:00">
-                2018-01-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="失恋还是蛮难过的。。。"><a href="#失恋还是蛮难过的。。。" class="headerlink" title="失恋还是蛮难过的。。。"></a>失恋还是蛮难过的。。。</h3><p>1-17 这几天，不知道为什么发生了好多事情。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chinesehero.github.io/2018/01/22/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sun Count">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="太伯爵">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/22/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-22T14:11:24+08:00">
-                2018-01-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -918,6 +436,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -938,8 +460,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -990,6 +521,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是flex布局？"><span class="nav-number">2.</span> <span class="nav-text">1.什么是flex布局？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-flex基本概念"><span class="nav-number">3.</span> <span class="nav-text">2.flex基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-flex的属性-复杂点"><span class="nav-number">4.</span> <span class="nav-text">3.flex的属性(复杂点)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-flex-direction属性"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 flex-direction属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2flex-wrap属性"><span class="nav-number">4.2.</span> <span class="nav-text">3.2flex-wrap属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-flex-flow"><span class="nav-number">4.3.</span> <span class="nav-text">3.3 flex-flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4justify-content属性"><span class="nav-number">4.4.</span> <span class="nav-text">3.4justify-content属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-align-items属性"><span class="nav-number">4.5.</span> <span class="nav-text">3.5 align-items属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-6-align-content-属性"><span class="nav-number">4.6.</span> <span class="nav-text">3.6 align-content 属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-项目的属性"><span class="nav-number">4.7.</span> <span class="nav-text">4.项目的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-order属性"><span class="nav-number">4.8.</span> <span class="nav-text">4.1 order属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-flex-grow属性"><span class="nav-number">4.9.</span> <span class="nav-text">4.2 flex-grow属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-flex-shrink"><span class="nav-number">4.10.</span> <span class="nav-text">4.3 flex-shrink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-flex-basis属性"><span class="nav-number">4.11.</span> <span class="nav-text">4.4 flex-basis属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-flex属性"><span class="nav-number">4.12.</span> <span class="nav-text">4.5 flex属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-align-self属性"><span class="nav-number">4.13.</span> <span class="nav-text">4.6 align-self属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结束"><span class="nav-number">5.</span> <span class="nav-text">结束</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1130,6 +677,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
